@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Budget Tracker
 
-## Getting Started
+## Overview
+This project is a **transaction tracking and budgeting application** built with **Next.js, React, shadcn/ui, Recharts, and MongoDB**. It allows users to track their expenses, categorize transactions, visualize spending with charts, and set budgets.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### **Common Features**
+✅ Built with **Next.js, React, shadcn/ui, Recharts, and MongoDB**  
+✅ Responsive design with proper error handling and validation  
+✅ Interactive and dynamic UI for a seamless experience  
+
+---
+
+### **Stage 1: Basic Transaction Tracking**
+✔ Add, Edit, and Delete transactions (amount, date, description)  
+✔ View a list of transactions  
+✔ Monthly expenses bar chart using **Recharts**  
+✔ Form validation for required fields  
+
+---
+
+### **Stage 2: Categories**
+✔ **All Stage 1 features** +  
+✔ Predefined **categories** for transactions (Food, Transport, Shopping, etc.)  
+✔ **Category-wise pie chart** for better visualization  
+✔ **Dashboard with summary cards**:
+   - Total expenses
+   - Category breakdown
+   - Most recent transactions
+
+---
+
+### **Stage 3: Budgeting**
+✔ **All Stage 2 features** +  
+✔ Ability to **set monthly category budgets**  
+✔ **Budget vs Actual comparison chart** to track overspending  
+✔ Simple spending insights for financial awareness  
+
+---
+
+## **Tech Stack**
+- **Frontend:** Next.js, React, Tailwind CSS, shadcn/ui
+- **Charts & UI:** Recharts, shadcn/ui components
+- **Database:** MongoDB for storing transactions and budgets
+- **State Management:** React state & context API
+- **Backend API:** Next.js API routes for data fetching
+
+---
+
+## **Getting Started**
+### 1️⃣ **Clone the repository**
+```sh
+git clone https://github.com/your-username/nextjs-budget-tracker.git
+cd nextjs-budget-tracker
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ **Install dependencies**
+```sh
+npm install  # or yarn install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 3️⃣ **Setup Environment Variables**
+Create a `.env.local` file and add:
+```
+MONGODB_URI=your_mongodb_connection_string
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4️⃣ **Run the application**
+```sh
+npm run dev  # or yarn dev
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## **Contributing**
+Contributions are welcome! Feel free to fork the repo, make changes, and submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## **License**
+This project is licensed under the **MIT License**.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
