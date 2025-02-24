@@ -51,8 +51,8 @@ This project is a **transaction tracking and budgeting application** built with 
 ## **Getting Started**
 ### 1️⃣ **Clone the repository**
 ```sh
-git clone https://github.com/your-username/nextjs-budget-tracker.git
-cd nextjs-budget-tracker
+git clone https://github.com/utkars3/personal-finance-tracker.git
+cd personal-finance-tracker
 ```
 
 ### 2️⃣ **Install dependencies**
@@ -71,14 +71,4 @@ NEXT_PUBLIC_API_URL=http://localhost:3000/api
 ```sh
 npm run dev  # or yarn dev
 ```
-
----
-
-## **Contributing**
-Contributions are welcome! Feel free to fork the repo, make changes, and submit a pull request.
-
----
-
-## **License**
-This project is licensed under the **MIT License**.
 
