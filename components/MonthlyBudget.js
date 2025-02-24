@@ -23,6 +23,7 @@ export default function MonthlyBudget() {
   const fetchBudgetData = async () => {
     try {
       const res = await fetch("/api/budgets");
+    //   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/budgets`)
       const data = await res.json();
       const budgets = data.reduce((acc, { month, amount }) => {
         acc[month] = amount;

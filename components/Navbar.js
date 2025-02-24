@@ -1,6 +1,6 @@
 export default function Navbar({ setActiveTab }) {
     return (
-      <nav className="bg-blue-600 p-4 text-white w-full flex justify-center gap-4">
+        <nav className="bg-blue-600 p-4 text-white w-full flex flex-wrap justify-center gap-2">
         <button onClick={() => setActiveTab("dashboard")} className="px-4 py-2 hover:bg-blue-700 rounded">
           Dashboard
         </button>
@@ -17,6 +17,7 @@ export default function Navbar({ setActiveTab }) {
           Monthly Expense
         </button>
       </nav>
+      
     );
   }
   
